@@ -7,11 +7,11 @@
 
 ---
 ## Review
-### Main contributions
+### Main Structures
 1. contribution 1
 2. contribution 2
 3. contribution 3
-### Thoughts
-
 
 ---
+### Improvements
+
