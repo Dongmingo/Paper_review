@@ -13,8 +13,6 @@
 2. Pose Algnment
 - Graph optimization are conducted inter-fragment, intra-fragment based on correspondence information matrix.
 
-3. contribution 3
-
 ---
 ### Improvements
 - Too many edge candidates(need to estimate relative pose, information matrix) to find, even if the local(fragment)-to-global hierarchical structure.
