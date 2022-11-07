@@ -27,10 +27,17 @@
 
 3. Energy Minimization
 - Weights of dense energy is linearly increased allowing coarse to fine alignment
-- Sparse energy is calculated in correspondence features
-- Dense energy is calcuated in both photometric and geometric.
-- 
+- Sparse energy is calculated in correspondence features through every possible inter-chunk pairs.
+- Dense energy is calcuated in both photometric and geometric with downsampled iamge (80x60)
+- Iteration is Newton-Gaussian modified form which only se first order derivatives and use Tayler expansion, solving with GPU-based PCG
+- After every optimization, filter out residual > 0.05m. Remove all correspondences.
 
+4. Dynamic 3D Reconstruction
+- To achieve on-line reconstruciton, sparse voxel hashing TSDF is integrated, de-integrated during reconstruction.
+- If the tracking failure happens, finds correspondences from previous global features.
+
+5. Results
+- Global pose optimization framework can implicitly handles loop closures, recover from tracking failures, and reduces geometric drift (compare to frame-to-model ICP tracking: KinectFusion) 
 ---
 ### Improvements
 1. Too many heuristic filters (From correspondence finding, Chunk finding, loop finding
