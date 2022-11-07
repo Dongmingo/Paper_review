@@ -9,11 +9,14 @@
 ### Main Structures
 1. Fragment Construction
 - Fragment(sequential 50 frames reconstructed point cloud) are reconstructed locally, and globally aligned fragment-wisely
-3. contribution 2
-4. contribution 3
+
+2. Pose Algnment
+- Graph optimization are conducted inter-fragment, intra-fragment based on correspondence information matrix.
+
+3. contribution 3
 
 ---
 ### Improvements
-- Too many edge candidates to find, even if the local(fragment)-to-global hierarchical structure.
+- Too many edge candidates(need to estimate relative pose, information matrix) to find, even if the local(fragment)-to-global hierarchical structure.
 - It depends highly on odometry sequential information, so it is hard to generally handle tracking failures.
 
