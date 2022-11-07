@@ -7,10 +7,13 @@
 ---
 ## Review
 ### Main Structures
-1. contribution 1
-2. contribution 2
-3. contribution 3
+1. Fragment Construction
+- Fragment(sequential 50 frames reconstructed point cloud) are reconstructed locally, and globally aligned fragment-wisely
+3. contribution 2
+4. contribution 3
 
 ---
 ### Improvements
+- Too many edge candidates to find, even if the local(fragment)-to-global hierarchical structure.
+- It depends highly on odometry sequential information, so it is hard to generally handle tracking failures.
 
