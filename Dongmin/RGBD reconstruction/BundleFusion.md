@@ -40,5 +40,5 @@
 - Global pose optimization framework can implicitly handles loop closures, recover from tracking failures, and reduces geometric drift (compare to frame-to-model ICP tracking: KinectFusion) 
 ---
 ### Improvements
-1. Too many heuristic filters (From correspondence finding, Chunk finding, loop finding
+1. Too many heuristic filters (From correspondence finding, Chunk finding, loop finding)
 
