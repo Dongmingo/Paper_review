@@ -10,7 +10,11 @@
 1. Fragment Construction
 - Fragment(sequential 50 frames reconstructed point cloud) are reconstructed locally, and globally aligned fragment-wisely
 
-2. Pose Algnment
+2. Geometric Registration
+- Extensive experiments on fragment-wise geometric registration. Every method low performance on precision, and recall.
+- Graph optimization with line process weight, and pruning soars on precision while maintaining recall. 
+
+3. Pose Alignment
 - Graph optimization are conducted inter-fragment, intra-fragment based on correspondence information matrix.
 
 ---
