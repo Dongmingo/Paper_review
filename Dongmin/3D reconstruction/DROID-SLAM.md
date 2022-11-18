@@ -25,7 +25,7 @@
 2. Feature extraction is computed with 6 res block with 3 downsample layer results 1/8 resolution dense feature maps like RAFT. Uses two network, feature network used to build the set of correlation volumes, while context features are injected into the network during each update operator.
 - Every edge, compute 4D correlation volume by taking the dot product by all pairs of feature vectors f(I_i), f(I_j), average pooling onn last two dim to form 4-level correlation pyramid
 - Define lookup operator as RAFT takes an HxW grid of coordinates as input and values are retrieved from the correlation volume using bilinear interpolation, final feature vector is computed by concatenating the results at each level.
-<img src="./assets/DROID Operator.png">
+<img src="./assets/DROID Operator.png">.  
 - Learning based operator acts on edges in frame graph, predict flow revision which are mapped to depth and pose update through th DBA layer
 - 3x3 convolutional GRU updates pose and depth.
 - Correspondence field p_ij is the coordinates of pixels p_i mapped in to frmae j using the estimated pose and depth. Use it to index correlation volume C_ij to retrieve correlation features, and optical flow p_ij-p_j
