@@ -36,14 +36,25 @@
 - Dense Bundle Adjustment Layer (DBA) maps the set of flow revision s into a set of pose and pixelwise depth updates. Cost funtion is over the entire frame graph(geometric reprojection error) with conf w_ij Mahalanobis distance. For linearization, use local parameterization and use Gauss-Newton. Seperating pose and depth var, system can be solved dfficiently using the Schur complement.
 - [RAFT video](https://youtu.be/OnZIDatotZ4) can help understanding
 
-3. While training on mono setting, network only able to recover the trajectory of the camera up to a similarity transform. To handle this, define loss invariant to similarity transforms, and Gauge-freedom left. To manage it, fix the first two poses to the g.t pose of each training seq. fixing them removes the 6-dof gauge freedom. Fixing second pose resolves scale freedom.
+3. Training
+- While training on mono setting, network only able to recover the trajectory of the camera up to a similarity transform. To handle this, define loss invariant to similarity transforms, and Gauge-freedom left. To manage it, fix the first two poses to the g.t pose of each training seq. fixing them removes the 6-dof gauge freedom. Fixing second pose resolves scale freedom.
 - Each training vid consist of 7-frame video seq. For each video i of length N_i, precompute N_i x N_i distance matrix storing the average optical flow, and less than 50 % overlap are discarded. During training, dynamically generate videos by sampling paths in the distance matrix. (average flow between adjacent vid 8px to 96px)
 - Supervise with pose loss and flow loss. (pose loss : L2 on T^-1_i dot G_i) : GT pose inv dot pred pose
+
+4. Inference
+- Compose the network into a full SLAM.
+- First keep prev 12 set of frame if optical flow is greater than 16px. Initialize frame graph by creating an edges between keyframes which are within 3 timesteps apart, then run 10 iteration of the update operator. The new frame is added to the frame graph adding edges with its 3 nearest frames measured by average optical flow.
+- Fix the first two poses to remove gauge freddom but treat all epth as free var.
+- After new frame is tracked, select a prev keyframe to remove redundant frames or oldest frame.
+- Global bundle adjustment is conducted all history keyframes (NxN), neighboring edges are suppressed within a Chevyshev distance of 2. 
 
 ---
 ### Improvements
 1. Need proper initial guess which means if the sequential input frames differs a lot, it may fails on tracking. (network only able to recover the trajectory of the camera up to a similarity transform)
+2. Initial pose estimation is from linear motion model, which means irregular movements affects the result.
 
 ### Note
-1. They use full image like direct method, allowing to leverage wider range of nformation than edges, and corners. Additionally, optimize on geometric reprojection error to achieve robust and easier optimization.
+1. They use full image like direct method, allowing to leverage wider range of information than edges, and corners. Additionally, optimize on geometric reprojection error to achieve robust and easier optimization.
 2. Average optical flow is similar to the overlap between two images.
+3. Global bundle adjustment can be applied when refinment.
+4. 2 3090 required. Tracking and local BA is on first GPU, global BA on second. On TUM-RGBD use downsampled input 240x320 30 fps.
