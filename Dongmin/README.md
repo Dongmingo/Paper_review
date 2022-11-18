@@ -1,6 +1,6 @@
 Dongmin's weekly paper review
 # Overview
--- [3D reconstruction](#3D-reconstruction)
+-- [3D reconstruction](#3D-reconstruction).  
 -- [3D dataset](#3D-dataset)
 
 ---
