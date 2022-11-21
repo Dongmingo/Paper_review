@@ -24,3 +24,4 @@ Upto 1,000 building scale scene.
 ---
 ### Improvements
 1. Still have defects in reconstruction. 
+2. The dataset is mainly for training embodied AI
