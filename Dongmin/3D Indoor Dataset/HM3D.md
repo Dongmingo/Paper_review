@@ -6,15 +6,21 @@
 
 ---
 ## System Overview
-<img src="./assets/HM3D.png">
+<img src="./assets/HM3D_ex.png">.  
+Two example scenes from HM3D dataset
 
-### Main structures
-1. 
-- 
+### Main Differences from Prev works
+Upto 1,000 building scale scene. 
+<img src="./assets/HM3D_scale.png">.  
+1. Scale: Handling much larger places w.r.t prev works (ScanNet, SceneNN individual room scale scene)
+- Significantly higher total naviable area (1.4-3.7 times larger)
 
-2. 
-- 
+2. Completeness: Providing near-complete w.r.t prev building scale works (BuildingParser, Matterport3D, Gibson are incomplete recon)
+- Reflected 34-91% reduction in reconstruction artifacts due to missing surfaces, holes, or untextured surface regions compare to photorealistic 3D dataset. (Reduces seeing through a hole in the wall effect when training embodied AI)
+
+3. Visual Fidelity: 
+- 20-85% higher than prior large-scale datasets.
 
 ---
 ### Improvements
-1. 
+1. Still have defects in reconstruction. 
