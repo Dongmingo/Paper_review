@@ -15,4 +15,5 @@ Dongmin's weekly paper review
 ---
 # Update Log
 (22.11.04) - BundleFusion, Redwood.  
-(22.11.18) - DROID-SLAM, HM3D
+(22.11.18) - DROID-SLAM
+(22.11.21) - HM3D
