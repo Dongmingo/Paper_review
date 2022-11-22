@@ -58,3 +58,12 @@
 2. Average optical flow is similar to the overlap between two images.
 3. Global bundle adjustment can be applied when refinment.
 4. 2 3090 required. Tracking and local BA is on first GPU, global BA on second. On TUM-RGBD use downsampled input 240x320 30 fps.
+
+### Code detail
+1. Detiled
+- Input resize to make input pixels similar size to 384*512
+- Use FactorGraph
+- Feature network, Context network is same except output dim: 128, 256, and feature output is used to find correspondence of streamed image and cloest keyframe, context output use the correspondences to fined flow mag.
+- Only keyframes would be on the video, and limit is the fixed length of keyframes, it already memory allocated.
+- local BA is on function named frontend.  
+- Global BA is on function named backend.   
