@@ -66,4 +66,6 @@
 - Feature network, Context network is same except output dim: 128, 256, and feature output is used to find correspondence of streamed image and cloest keyframe, context output use the correspondences to fined flow mag.
 - Only keyframes would be on the video, and limit is the fixed length of keyframes, it already memory allocated.
 - local BA is on function named frontend.  
-- Global BA is on function named backend.   
+- Global BA is on function named backend.
+- It takes time to GBA if the scenes getting bigger
+- Optical flow based, very robust, but it fails to recon at the dark, kidnapped(non-sequential) settings. 
