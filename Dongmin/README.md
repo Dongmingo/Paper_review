@@ -13,12 +13,12 @@ Dongmin's weekly paper review
 ## 3D Dataset
 (ArXiv'21) [HM3D](https://github.com/Dongmingo/Paper_review/blob/main/Dongmin/3D%20Indoor%20Dataset/HM3D.md): Habitat-Matterport 3D Dataset: 1000 Large-scale 3D Environments for Embodied AI
 
-## Discriptor
-(Data & knowledge engineering'06) [Online Clustering](https://github.com/Dongmingo/Paper_review/blob/main/Dongmin/Descriptor/Online%20Clustering.md)
+## Descriptor
+(IEEE Transactions of Industrial Electronics'06) [Local Spatial Co-occurrence](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9957088)
 
 ---
 # Update Log
 (22.11.04) - BundleFusion, Redwood.  
 (22.11.18) - DROID-SLAM
 (22.11.21) - HM3D
-(22.11.26) - Oneline Clustering
+(22.11.26) - Local Spatial Co-occurrence
