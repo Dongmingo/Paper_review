@@ -33,4 +33,6 @@ Paper aims to develop more informative and efficient feature representation with
 
 ### Notes
 - Monocular SLAM chose to embed DBoW using handcrafted features SURF, ORB, matching based on Term Frequency-Inverse Document Frequency distance. But recall was bad. CNN features, Superpoint features, global feature and local attention based features. Sequence-Visual-Word-Vector was designed to use auxiliary information of sequential order, spatial transformation, feature co-ocurrence.
+- No code is available
+- Sequential input, tracking based, feature based descriptor
 
