@@ -14,7 +14,7 @@ Dongmin's weekly paper review
 (ArXiv'21) [HM3D](https://github.com/Dongmingo/Paper_review/blob/main/Dongmin/3D%20Indoor%20Dataset/HM3D.md): Habitat-Matterport 3D Dataset: 1000 Large-scale 3D Environments for Embodied AI
 
 ## Descriptor
-(IEEE Transactions of Industrial Electronics'22) [Local Spatial Co-occurrence](https://github.com/Dongmingo/Paper_review/blob/main/Dongmin/Descriptors/Local%20Spatial%20Co-occurrence.md)
+(IEEE Transactions of Industrial Electronics'22) [Local Spatial Co-occurrence👎](https://github.com/Dongmingo/Paper_review/blob/main/Dongmin/Descriptors/Local%20Spatial%20Co-occurrence.md)
 
 ---
 # Update Log
