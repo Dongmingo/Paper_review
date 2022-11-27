@@ -11,7 +11,7 @@ Dongmin's weekly paper review
 (NeurIPS'22) [DROID-SLAM](https://github.com/Dongmingo/Paper_review/blob/main/Dongmin/3D%20reconstruction/DROID-SLAM.md): Deeo Visual SLAM for Monocular, Stereo, and RGB-D Cameras
 
 ## 3D Dataset
-(ArXiv'21) [HM3D](https://github.com/Dongmingo/Paper_review/blob/main/Dongmin/3D%20Indoor%20Dataset/HM3D.md): Habitat-Matterport 3D Dataset: 1000 Large-scale 3D Environments for Embodied AI
+(ArXiv'21) [HM3D](https://github.com/Dongmingo/Paper_review/blob/main/Dongmin/3D%20Indoor%20Dataset/HM3D.md): Habitat-Matterport 3D Dataset: 1000 Large-scale 3D Environments for Embodied AI.  
 (NeurIPS'21) [Habitat2.0](https://github.com/Dongmingo/Paper_review/blob/main/Dongmin/3D%20Indoor%20Dataset/Habitat2.0.md): TrainingHome Assistants to Rearrange their Habitat
 
 ## Descriptor
