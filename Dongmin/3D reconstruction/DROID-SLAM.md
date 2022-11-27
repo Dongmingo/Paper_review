@@ -20,6 +20,8 @@
 3. Take inspirations from [Dusmanu et al](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123460647.pdf), build neural network into the SfM pipeline to improve keypoint localization accuracy.
 
 ## Main structures
+<img src="./assets/DROID-SLAM overview2.png">
+
 1. Adopt frame-graph to represent co-visibility between frames. An edge means an image I_i and I_j have overlapping fields of voew which shared points. The frame graph is build dynamically during training and inference. After every pose and depth update, recompute visibility to update frame graph. -> If the camera returns to previous position, make edge. 
 
 2. Feature extraction is computed with 6 res block with 3 downsample layer results 1/8 resolution dense feature maps like RAFT. Uses two network, feature network used to build the set of correlation volumes, while context features are injected into the network during each update operator.
