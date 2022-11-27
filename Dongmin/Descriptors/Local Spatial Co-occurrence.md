@@ -14,7 +14,7 @@
 - Common KD-tree is fast but dificient in high dimensional space, a simple mean/medium merging is not reliable.
 
 ### Main Structures
-<img src="./assets/Local%20Spatial%20Co-occurence.png">
+<img src="./assets/Local Spatial Co-occurence.png">
 Efficient and novel BoW LCD system which can execute online. 
 Paper aims to develop more informative and efficient feature representation with depth into the spatial relationship over images, where local co-occurrence information is exploited
 1. Local spatial co-occurrence relationship based on feature tracker, feature created into each BoW unit, voting-based decision scheme (temporal, similiarity)
