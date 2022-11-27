@@ -23,7 +23,7 @@ Paper aims to develop more informative and efficient feature representation with
 
 1. Place representation: the spatial information (mutual geometrical information between features) is exploited to retrain the local layout of each feature. As there exists loses while projecting 3D env into 2D image, system relies on the co-occurrence of adjacent features that counts the occurrence frequencies over the sequential images (counting the feature appearance of streamed input frames). Every features are tracked by KLT optical flow tracker. If the track length of feature over a threshold L_th, it assumed as a landmark. Tracking is refined with nearest neighbor in next frame. Pyramid size of each SURF feature is used to roughly offer the radius threshold.  
 2. Incremental Database(Hierarchical Navigable Small World Graph): incrementally connecting to k-nearest neighbors for every inserted node. Continuously compute distance, which means automatic updates when find shorter route.
-<img src="./assets/LCD alg.png" width="50">
+<img src="./assets/LCD alg.png" width=50%>
 
 ---
 ### Improvements
