@@ -4,7 +4,7 @@
 Oleksandr Maksymets, Aaron Gokaslan, Vladimir Vondrus, Sameer Dharur, Franziska Meier, Wojciech Galuba, Angel Chang, Zsolt Kira,
 Vladlen Koltun, Jitendra Malik, Manolis Savva, Dhruv Batra
 
-[Paper Link](https://github.com/facebookresearch/habitat-sim)  
+[Page Link](https://github.com/facebookresearch/habitat-sim)  
 
 ---
 ## Review
