@@ -1,4 +1,4 @@
-# Habitat2.0: Training Home Assistants to Rearrange their Habitat (NuerIPS '21)
+# Habitat2.0: Training Home Assistants to Rearrange their Habitat (NeurIPS '21)
 
 > Andrew Szot, Alex Clegg, Eric Undersander, Erik Wijmans, Yili Zhao, John Turner, Noah Maestre, Mustafa Mukadam, Devendra Chaplot, 
 Oleksandr Maksymets, Aaron Gokaslan, Vladimir Vondrus, Sameer Dharur, Franziska Meier, Wojciech Galuba, Angel Chang, Zsolt Kira,
