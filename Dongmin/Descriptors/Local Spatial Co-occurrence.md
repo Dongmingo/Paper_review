@@ -14,12 +14,17 @@
 - Common KD-tree is fast but dificient in high dimensional space, a simple mean/medium merging is not reliable.
 
 ### Main Structures
+<img src="./assets/Local%20Spatial%20Co-occurence.png">
 Efficient and novel BoW LCD system which can execute online. 
-1. Paper aims to develop more informative and efficient feature representation with depth into the spatial relationship over images, where local co-occurrence information is exploited
+Paper aims to develop more informative and efficient feature representation with depth into the spatial relationship over images, where local co-occurrence information is exploited
+1. Local spatial co-occurrence relationship based on feature tracker, feature created into each BoW unit, voting-based decision scheme (temporal, similiarity)
+2. Hierarchical navigable small world graph-based vocabulary management module with online clustering, tailored for SURF descriptor
+3. Avoid preservation of historic images data
 
 ---
 ### Improvements
 
 
 ### Notes
+- Monocular SLAM chose to embed DBoW using handcrafted features SURF, ORB, matching based on Term Frequency-Inverse Document Frequency distance. But recall was bad. CNN features, Superpoint features, global feature and local attention based features. Sequence-Visual-Word-Vector was designed to use auxiliary information of sequential order, spatial transformation, feature co-ocurrence.
 
